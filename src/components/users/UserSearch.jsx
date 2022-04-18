@@ -1,6 +1,7 @@
 import { useState, useContext } from 'react'
 import GithubContext from '../../context/github/GithubContext'
 import AlertContext from '../../context/alert/AlertContext'
+import { FaSearch } from 'react-icons/fa'
 
 function UserSearch() {
     const [text, setText] = useState('')
@@ -37,7 +38,7 @@ function UserSearch() {
                                 placeholder='Search'
                                 value={text}
                                 onChange={handleChange}/>
-                            <button className="absolute top-0 right-0 rounded-l-none-36 btn btn-lg">Find</button>
+                            <button className="absolute top-0 right-0 rounded-l-none rounded-r-36 btn btn-lg"><FaSearch/></button>
                         </div>
                     </div>
                 </form>
