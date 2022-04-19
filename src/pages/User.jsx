@@ -4,17 +4,27 @@ import GithubContext from "../context/github/GithubContext"
 import RepoList from '../components/repos/RepoList'
 import { FaCodepen, FaStore, FaUserFriends, FaUsers } from 'react-icons/fa'
 import Spinner from "../components/layout/Spinner"
+import { getUser, getUserRepos } from "../context/github/GithubActions"
 
 function User() {
 
-    const { getUser, user, loading, getUserRepos, repos } = useContext(GithubContext) 
+    const { user, repos, loading, dispatch } = useContext(GithubContext) 
 
     const params = useParams()
 
     useEffect(() => {
-        getUser(params.login)
-        getUserRepos(params.login)
-    }, [])
+        dispatch({type: 'SET_LOADING'})
+        
+        const getUserData = async (e) => {
+            const userData = await getUser(params.login)
+            dispatch({type: 'GET_USER', payload: userData})
+
+            const userRepos = await getUserRepos(params.login)
+            dispatch({type: 'GET_USER_REPOS', payload: userRepos})
+        }
+
+        getUserData()
+    }, [dispatch,params.login])
 
     // Destructure user object
     const {

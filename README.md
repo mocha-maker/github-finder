@@ -15,6 +15,8 @@ This app searched Github users and displays their info by connecting to Github's
 * 3rd Party API
 * HTTP Requests
 * TailwindCSS Styling
+* React - Context and Reducers
+
 # Installation and Usage
 1. Rename .env.example to .env
 
