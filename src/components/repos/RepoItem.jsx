@@ -13,8 +13,7 @@ function RepoItem({ repo }) {
         watchers_count,
         stargazers_count,
         has_pages,
-        login,
-        
+        homepage,
     } = repo
 
   return (
@@ -41,8 +40,12 @@ function RepoItem({ repo }) {
                     <FaUtensils className='mr-2'/> {forks}
                 </div>
             </div>
-            {has_pages && (<h1 className='mb-2 text-l absolute top-0 right-0 mr-2'>
-                <a href={` https://${repo.owner.login}.github.io/${name}`} rel="noreferrer">
+            {/* External Link Icon if either github pages or a homepage exists */}
+            {(has_pages || homepage) && (<h1 className='mb-2 text-l absolute top-0 right-0 mr-2'>
+                <a href={
+                    has_pages ? `https://${repo.owner.login}.github.io/${name}` : 
+                    `${homepage}`
+                    } rel="noreferrer">
                     <FaExternalLinkSquareAlt className='inline mr-1'/>
                 </a>
             </h1>
