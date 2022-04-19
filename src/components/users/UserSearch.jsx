@@ -30,7 +30,7 @@ function UserSearch() {
     const handleClear = (e) => dispatch({type: 'CLEAR_USERS'})
 
     return (
-        <div className='grid grid-cols-4 mb-8 gap-4'>
+        <div className='grid grid-cols-4 mb-8 gap-4 self-start '>
             <div className="search-form col-span-3">
                 <form onSubmit={handleSubmit}>
                     <div className="form-control">

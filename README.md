@@ -19,6 +19,12 @@ This app searched Github users and displays their info by connecting to Github's
 * TailwindCSS Styling
 * React - Context, Reducers, Promises
 
+## Updates
+* Add Sorting by Stars to Repo List
+* Change Repo List grid layout to be more responsive
+* Various UI changes
+* Added icon link to github page site if available
+
 # Installation and Usage
 1. Rename .env.example to .env
 

@@ -3,7 +3,7 @@ import UserSearch from "../components/users/UserSearch"
 
 function Home() {
   return (
-    <div>
+    <div className="align-top h-full">
       <UserSearch/>
       <UserResults/>
     </div>

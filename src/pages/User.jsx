@@ -58,15 +58,15 @@ function User() {
 
             <div className="grid grid-col-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 mb-8 md:gap-8">
                 <div className="custom-card-image mb-6 md:mb-0">
-                    <div className="rounded-lg shadow-xl card image-full">
+                    <div className="flex rounded-lg shadow-xl card image-full">
                         <figure>
                             <img src={avatar_url} alt="Avatar" className="w-full" />
                         </figure>
                         <div className="card-body justify-end">
-                            <h2 className="card-title mb-0">
+                            <h2 className="card-title m-0">
                                 {name}
                             </h2>
-                            <p>{login}</p>
+                            <span>{login}</span>
                         </div>
                     </div>
                 </div>
@@ -119,7 +119,7 @@ function User() {
                 </div>
             </div> 
 
-            <div className="w-full py-5 mb-6 rounded-lg shadow md bg-base-100 stats">
+            <div className="w-full py-5 mb-6 rounded-lg shadow-md bg-base-100 stats">
                 <div className="stat">
                     <div className="stat-figure text-secondary">
                         <FaUsers className="text-3xl md:text-5xl" />

@@ -17,8 +17,19 @@ function About() {
         </strong>
         .
       </p>
+      <div className='pl-8 my-4'>
+        <h3 className='text-3xl mb-4'>Updates</h3>
+        <span>These are updates that were added by mocha-maker.</span>
+        <ul className='list-disc mt-4 ml-10'>
+          <li>Add Sorting by Stars to Repo List</li>
+          <li>Change Repo List grid layout to be more responsive</li>
+          <li>Added icon link to github page site if available</li>
+          <li>Various UI changes</li>
+        </ul>
+      </div>
+  
       <p className='text-lg text-gray-400'>
-        Version <span className='text-white'>1.0.0</span>
+        Version <span className='text-white'>1.0.1</span>
       </p>
       <p className='text-lg text-gray-400'>
         Layout By:

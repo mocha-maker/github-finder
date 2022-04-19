@@ -8,8 +8,21 @@ body {
   margin: 0;
 }
 
+.text-secondary {
+  color: slategray;
+}
+
 
 .custom-card-image .card.image-full:before {
   border-radius: 0.5rem;
   opacity: 0.45;
+}
+
+.card-body > * {
+  color: white;
+  opacity: 0.90;
+}
+
+.stat {
+  display: inline !important;
 }
