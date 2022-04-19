@@ -7,15 +7,17 @@ This app searched Github users and displays their info by connecting to Github's
 # Built With
 
 ## This project was built with the following tools and frameworks:
-* Create-React-App
-* TailwindCSS
-* Daisy UI
+* [Create-React-App](https://create-react-app.dev/)
+* [TailwindCSS](https://tailwindcss.com/)
+* [Daisy UI](https://daisyui.com/)
+* [Postman](https://www.postman.com/)
+* [Axios](https://www.npmjs.com/package/axios/)
 
 ## Skills demonstrated
 * 3rd Party API
 * HTTP Requests
 * TailwindCSS Styling
-* React - Context and Reducers
+* React - Context, Reducers, Promises
 
 # Installation and Usage
 1. Rename .env.example to .env
