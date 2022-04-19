@@ -2,7 +2,7 @@
 
 This is a part of the "React Front to Back 2022" Course by Brad Traversy.
 
-This app searched Github users and displays their info by connecting to Github's API.
+This app searches Github users and displays their info on custom pages by connecting to Github's API.
 
 # Built With
 
@@ -23,7 +23,7 @@ This app searched Github users and displays their info by connecting to Github's
 * Add Sorting by Stars to Repo List
 * Change Repo List grid layout to be more responsive
 * Various UI changes
-* Added icon link to github page site if available
+* Added icon link to homepage or github page site if available
 
 # Installation and Usage
 1. Rename .env.example to .env

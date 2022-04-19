@@ -23,8 +23,8 @@ function About() {
         <ul className='list-disc mt-4 ml-10'>
           <li>Add Sorting by Stars to Repo List</li>
           <li>Change Repo List grid layout to be more responsive</li>
-          <li>Added icon link to github page site if available</li>
-          <li>Various UI changes</li>
+          <li>Added icon link to homepage or github page site if available</li>
+          <li>Various UI changes e.g. alignments, colors</li>
         </ul>
       </div>
   
