@@ -22,16 +22,18 @@ export const searchUsers = async (text) => {
 // Get user and repos
 
 export const getUserAndRepos = async(login) => {
+    // Params to find TOP 10 repos by stars
     const params = new URLSearchParams({
+        q: 'user:' + login,
         sort: 'stars',
-        order: 'desc',
+        order_by: 'desc',
         per_page: 10,
     })
 
     const [user, repos] = await Promise.all([
         github.get(`/users/${login}`),
-        github.get(`/users/${login}/repos?${params}`),
+        github.get(`/search/repositories?${params}`),
     ])
 
-    return { user: user.data, repos: repos.data}
+    return { user: user.data, repos: repos.data.items}
 }
